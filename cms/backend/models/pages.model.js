@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 // Purpose: Pages Schema
-// Created By: 
+// Created By: RP 
 const pagesSchema = new mongoose.Schema(
   {
     title: { type: String, required: true },

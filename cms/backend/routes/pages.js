@@ -5,7 +5,7 @@ const auth = require("../middleware/auth");
 const Pages = require("../models/pages.model");
 
 // Purpose: Get All Pages
-// Created By: 
+// Created By: RP 
 router.get("/", auth, async (req, res) => {
   Pages.find()
     .then((pages) => res.json(pages))
@@ -13,7 +13,7 @@ router.get("/", auth, async (req, res) => {
 });
 
 // Purpose: Get Pages by Id
-// Created By: 
+// Created By: RP 
 router.get("/:id", auth, async (req, res) => {
   Pages.findById(req.params.id)
     .then((page) => res.json(page))
@@ -21,7 +21,7 @@ router.get("/:id", auth, async (req, res) => {
 });
 
 // Purpose: Delete Page by Id
-// Created By: 
+// Created By: RP 
 router.delete("/:id", auth, async (req, res) => {
   Pages.findByIdAndDelete(req.params.id)
     .then(() => res.json("Page deleted."))
@@ -29,7 +29,7 @@ router.delete("/:id", auth, async (req, res) => {
 });
 
 // Purpose: Create Page
-// Created By: 
+// Created By: RP 
 router.post("/add", auth, async (req, res) => {
   let { title, content, keywords, createdBy } = req.body;
 
@@ -65,7 +65,7 @@ router.post("/add", auth, async (req, res) => {
 });
 
 // Purpose: Update Page By Id
-// Created By: 
+// Created By: RP 
 router.post("/update/:id", auth, async (req, res) => {
   let { title, content, keywords, createdBy } = req.body;
 

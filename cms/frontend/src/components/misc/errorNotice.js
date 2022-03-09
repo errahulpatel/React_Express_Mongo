@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Alert from 'react-bootstrap/Alert'
 
 // Purpose: Show Error message
-// Created By: 
+// Created By: RP 
 function ErrorNotice (props) {
     const [show, setShow] = useState(props.message ? true :false);
 

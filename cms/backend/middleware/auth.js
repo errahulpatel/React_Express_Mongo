@@ -1,5 +1,5 @@
 // Purpose: Include JSON Web Tokens to authenticate API related package
-// Created By: 
+// Created By: RP 
 const jwt = require("jsonwebtoken");
 
 const auth = (req, res, next) => {

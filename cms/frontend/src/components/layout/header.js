@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import AuthOptions from "../auth/authOptions";
 
 // Purpose: Header Page
-// Created By: 
+// Created By: RP 
 function Header() {
 
     return (

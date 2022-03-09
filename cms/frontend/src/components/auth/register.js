@@ -5,7 +5,7 @@ import UserContext from "../../context/userContext";
 import ErrorNotice from "../misc/errorNotice";
 
 // Purpose: Register User Page
-// Created By: 
+// Created By: RP 
 function Register() {
   const [name, setName] = useState();
   const [emailaddress, setEmailaddress] = useState();

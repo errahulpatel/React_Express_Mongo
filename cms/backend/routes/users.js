@@ -14,7 +14,7 @@ const  allRequired  =  require( "../misc/messages");
 
 
 // Purpose: Register User from Signup Page
-// Created By: 
+// Created By: RP 
 router.post("/register", async (req, res) => {
   try {
     let { name, emailaddress, password, passwordCheck } = req.body;
@@ -56,7 +56,7 @@ router.post("/register", async (req, res) => {
 });
 
 // Purpose: Login API
-// Created By: 
+// Created By: RP 
 router.post("/login", async (req, res) => {
   try {
     const { emailaddress, password } = req.body;
@@ -97,7 +97,7 @@ router.post("/login", async (req, res) => {
 });
 
 // Purpose: Check if token is valid
-// Created By: 
+// Created By: RP 
 router.post("/tokenIsValid", async (req, res) => {
   try {
     const token = req.header("x-auth-token");
@@ -119,7 +119,7 @@ router.post("/tokenIsValid", async (req, res) => {
 });
 
 // Purpose: Create user after Login
-// Created By: 
+// Created By: RP 
 router.post("/add", auth, async (req, res) => {
   try {
     let {
@@ -170,7 +170,7 @@ router.post("/add", auth, async (req, res) => {
 });
 
 // Purpose: Get All Users
-// Created By: 
+// Created By: RP 
 router.get("/", auth, async (req, res) => {
   Users.find()
     .then((users) => res.json(users))
@@ -178,7 +178,7 @@ router.get("/", auth, async (req, res) => {
 });
 
 // Purpose: Get user By Id
-// Created By: 
+// Created By: RP 
 router.get("/:id", auth, async (req, res) => {
   Users.findById(req.params.id)
     .then((user) => res.json(user))
@@ -186,7 +186,7 @@ router.get("/:id", auth, async (req, res) => {
 });
 
 // Purpose: Delete user By Id
-// Created By: 
+// Created By: RP 
 router.delete("/:id", auth, async (req, res) => {
   try {
     await Users.findByIdAndDelete(req.params.id);
@@ -197,7 +197,7 @@ router.delete("/:id", auth, async (req, res) => {
 });
 
 // Purpose: Update user By Id
-// Created By: 
+// Created By: RP 
 router.post("/update/:id", auth, async (req, res) => {
   try {
     let {

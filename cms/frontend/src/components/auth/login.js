@@ -5,7 +5,7 @@ import UserContext from "../../context/userContext";
 import ErrorNotice from "../misc/errorNotice";
 
 // Purpose: Login Page
-// Created By: 
+// Created By: RP 
 
 function Login() {
   const [emailaddress, setEmailaddress] = useState();

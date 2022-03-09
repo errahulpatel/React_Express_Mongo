@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 
 // Purpose: Users Schema
-// Created By: 
+// Created By: RP 
 const usersSchema = new mongoose.Schema(
   {
     name: { type: String, required: true },

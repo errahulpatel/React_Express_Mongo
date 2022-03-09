@@ -4,7 +4,7 @@ import UserContext from "../../context/userContext";
 import { Link } from "react-router-dom";
 
 // Purpose: Authenticate User and Show Header Links
-// Created By: 
+// Created By: RP 
 function AuthOptions() {
   const { userData, setUserData } = useContext(UserContext);
   const history = useHistory();

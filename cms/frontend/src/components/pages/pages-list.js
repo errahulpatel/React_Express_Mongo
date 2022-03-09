@@ -10,7 +10,7 @@ import { confirmAlert } from "react-confirm-alert";
 import "react-confirm-alert/src/react-confirm-alert.css";
 
 // Purpose: Page List
-// Created By: 
+// Created By: RP 
 
 //Repeat of Page row
 const Pages = (props) => (

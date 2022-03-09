@@ -5,7 +5,7 @@ import UsersList from "../users/users-list";
 import { Link } from "react-router-dom";
 
 // Purpose: Home page
-// Created By: 
+// Created By: RP 
 function Home() {
   const { userData } = useContext(UserContext);
   const history = useHistory();
