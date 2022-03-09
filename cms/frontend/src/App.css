@@ -1,0 +1,25 @@
+.App {
+    text-align: center;
+  }
+  
+  .header{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: #27AF92;
+  }
+  .header a{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .cmscolor{
+    color: #fff;
+    background-color: #27AF92!important;
+    border-color: #27AF92!important;
+  }
+  
+  .react-tagsinput-input{width:100%;}
+  
+  .auth-options{width: 100%;}
+  
